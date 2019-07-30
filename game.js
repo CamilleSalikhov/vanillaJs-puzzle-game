@@ -24,10 +24,6 @@ class State {
         this.status = status;
     }
 //несколько static методов, создающих state в зависимости от status
-    static almostWon() {
-        return new State([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0, 15], 'play')
-    }
-
     static readyToPlay() {
         return new State([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'ready')
     }
@@ -74,7 +70,7 @@ class Game {
         return false
     }
 
-    //проверка
+    //проверка выигрыша
     ifWon = (grid) => {
         if(grid.toString() === winningCombination.toString()) {
             console.log('you won')
