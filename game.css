@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    flex-wrap: wrap;
+    align-self: center
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px
+}
+
+.start {
+    width: 400px;
+    align-self: center;
+    margin-top: 10px;
+    height: 100px;
+    background-color: aqua;
+    border: 0;
+}  
+
